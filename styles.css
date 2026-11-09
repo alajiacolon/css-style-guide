@@ -1,0 +1,199 @@
+/**
+ * [Master Stylesheet]
+ */
+
+/******************************************************************************/
+
+/**
+ * Project: Style Guide
+ * Version: 1.0
+ * Last change: 11/09/26
+ * Primary use: Learning project for design tokens and components
+ */
+
+/******************************************************************************/
+
+/**
+ * [Table of Contents]
+ * 1. Imports
+ * 2. Base styles / :root
+ * 3. Header / .site-header
+ * 4. Navigation / .site-nav
+ * 5. Main content / .page-content
+ * 6. Color palette / #colors
+ * 7. Responsive layout
+ */
+
+/******************************************************************************/
+
+/**
+ * [1. Imports]
+ */
+
+/******************************************************************************/
+/* No external stylesheets are required for this project. */
+
+/**
+ * [2. Base styles / :root]
+ */
+
+/******************************************************************************/
+:root {
+    /* Base Styles */
+	color-scheme: light;
+	font-family: Arial, sans-serif;
+	color: #202534;
+	background-color: #f4f6f8;
+
+    /* Color Palette */
+    --color-green: #8FAB3A;
+    --color-teal: #95c7c2;
+    --color-pink: #FA9089;
+    --color-light-blue: #BEE4E7;
+    --color-orange: #F49F51;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+}
+
+/**
+ * [3. Header / .site-header]
+ */
+
+/******************************************************************************/
+.site-header {
+	color: #ffffff;
+	background-color: #8fab3a;
+	height: 10rem;
+}
+
+/**
+ * [4. Navigation / .site-nav]
+ */
+
+/******************************************************************************/
+.site-nav {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: flex-end;
+	justify-content: space-between;
+	gap: 1rem;
+	max-width: 72rem;
+	margin: 0 auto;
+	padding: 1rem 1.5rem;
+	height: 100%;
+}
+
+.site-title,
+.site-nav a {
+	color: inherit;
+	text-decoration: none;
+}
+
+.site-title {
+	font-size: 2.6rem;
+	font-weight: 700;
+}
+
+.site-nav ul {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 1rem;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+/**
+ * [5. Main content / .page-content]
+ */
+
+/******************************************************************************/
+.page-content {
+	display: grid;
+	gap: 1.5rem;
+	max-width: 72rem;
+	margin: 0 auto;
+	padding: 2rem 1.5rem;
+}
+
+.page-content section {
+	min-height: 8rem;
+	padding: 1.5rem;
+	border-radius: 0.5rem;
+	background-color: #ffffff;
+}
+
+/**
+ * [6. Color palette / #colors]
+ */
+
+/******************************************************************************/
+.color-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(9rem, 1fr));
+	gap: 1rem;
+}
+
+.color-card {
+	overflow: hidden;
+	border: 1px solid #dce1e6;
+	border-radius: 0.5rem;
+	background-color: #ffffff;
+}
+
+.color-swatch {
+	min-height: 6rem;
+}
+
+.color-swatch--titanite {
+	background-color: var(--color-green, green);
+}
+
+.color-swatch--tropical-breeze {
+	background-color: var(--color-teal, teal);
+}
+
+.color-swatch--flam-pink {
+	background-color: var(--color-pink, pink);
+}
+
+.color-swatch--spring-water {
+	background-color: var(--color-light-blue, aqua);
+}
+
+.color-swatch--homebody {
+	background-color: var(--color-orange, orange);
+}
+
+.color-card h3,
+.color-card p {
+	margin: 0;
+	padding: 0.5rem 0.75rem 0;
+}
+
+.color-card p {
+	padding-top: 0.25rem;
+	padding-bottom: 0.75rem;
+}
+
+/**
+ * [7. Responsive layout]
+ */
+
+/******************************************************************************/
+@media (min-width: 48rem) {
+	.page-content {
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+	}
+
+	#colors,
+	#content-cards {
+		grid-column: span 2;
+	}
+}

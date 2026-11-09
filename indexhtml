@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="A learning project for building a style and design guide.">
+	<title>Style Guide</title>
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+	<header class="site-header">
+		<nav class="site-nav" aria-label="Main navigation">
+			<a class="site-title" href="#top">Style Guide</a>
+			<ul>
+				<li><a href="#colors">Colors</a></li>
+				<li><a href="#typography">Typography</a></li>
+				<li><a href="#spacing">Spacing</a></li>
+				<li><a href="#buttons">Buttons</a></li>
+				<li><a href="#content-cards">Content cards</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<main id="top" class="page-content">
+		<!-- Colors section -->
+		<section id="colors" aria-labelledby="colors-heading">
+			<h2 id="colors-heading">Colors</h2>
+			<div class="color-grid">
+				<div class="color-card">
+					<div class="color-swatch color-swatch--titanite" aria-hidden="true"></div>
+					<h3>Titanite</h3>
+					<p>#8FAB3A</p>
+				</div>
+				<div class="color-card">
+					<div class="color-swatch color-swatch--tropical-breeze" aria-hidden="true"></div>
+					<h3>Tropical Breeze</h3>
+					<p>#95c7c2</p>
+				</div>
+				<div class="color-card">
+					<div class="color-swatch color-swatch--flam-pink" aria-hidden="true"></div>
+					<h3>Flamingo Pink</h3>
+					<p>#FA9089</p>
+				</div>
+				<div class="color-card">
+					<div class="color-swatch color-swatch--spring-water" aria-hidden="true"></div>
+					<h3>Spring Water</h3>
+					<p>#BEE4E7</p>
+				</div>
+				<div class="color-card">
+					<div class="color-swatch color-swatch--homebody" aria-hidden="true"></div>
+					<h3>Homebody</h3>
+					<p>#F49F51</p>
+				</div>
+			</div>
+		</section>
+
+		<!-- Typography section -->
+		<section id="typography" aria-labelledby="typography-heading">
+			<h2 id="typography-heading">Typography</h2>
+		</section>
+
+		<!-- Spacing section -->
+		<section id="spacing" aria-labelledby="spacing-heading">
+			<h2 id="spacing-heading">Spacing</h2>
+		</section>
+
+		<!-- Buttons section -->
+		<section id="buttons" aria-labelledby="buttons-heading">
+			<h2 id="buttons-heading">Buttons</h2>
+		</section>
+
+		<!-- Content cards section -->
+		<section id="content-cards" aria-labelledby="content-cards-heading">
+			<h2 id="content-cards-heading">Content cards</h2>
+		</section>
+	</main>
+</body>
+</html>
